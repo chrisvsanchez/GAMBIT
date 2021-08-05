@@ -1,6 +1,4 @@
-# GAMBIT♠️ MintBean Hackathon
-
-![](gambit.gif)
+# GAMBIT♠️♦️♣️❤️ MintBean Hackathon
 
 ## Description
 
