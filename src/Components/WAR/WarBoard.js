@@ -8,7 +8,7 @@ const WarBoard = () => {
   const [shuffDeck, setShuffDeck] = useState([]);
   const [currentlyDrawn, setCurrentlyDrawn] = useState([]);
   const [oppDrawn, setOppDrawn] = useState([]);
-  const [boardCards, setBoardCards] = useState([]);
+
   function card(value, name, suit, back) {
     this.value = value;
     this.name = name;
@@ -165,7 +165,7 @@ const WarBoard = () => {
           ))}
         </CurrentPlayerSide>
       </DrawnCards>
-      <CurrentPlayerDeck style={{ backgroundColor: "yellow" }}>
+      <CurrentPlayerDeck>
         <div style={{ height: "auto" }} onClick={drawCard}>
           <BackCard numOfCards={currPlayerDeck.length} />
         </div>
@@ -177,27 +177,25 @@ const WarBoard = () => {
 const GameBoardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  border: solid blue;
   height: 100%;
 `;
 const DrawnCards = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
-  border: solid 5px green;
 `;
 const OpponentSide = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: green;
+  background-color: #79a9cd;
   padding-right: 5px;
 `;
 const CurrentPlayerSide = styled.div`
   flex: 1;
   display: flex;
-  background-color: yellow;
+  background-color: #ffce47;
   align-items: center;
   justify-content: flex-start;
   padding-left: 5px;
@@ -207,14 +205,14 @@ const OpponentDeck = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 5px chartreuse;
-  background-color: green;
+
+  background-color: #79a9cd;
 `;
 const CurrentPlayerDeck = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 5px blueviolet;
+  background-color: #ffce47;
 `;
 export default WarBoard;

@@ -12,17 +12,17 @@ const routes = [
   {
     path: "/how-to-play",
     exact: true,
-    sidebar: () => <div>home!</div>,
+    sidebar: () => <></>,
     main: () => <War />,
   },
   {
     path: "/war",
-    sidebar: () => <div>bubblegum!</div>,
+    sidebar: () => <></>,
     main: () => <War />,
   },
   {
     path: "/memory",
-    sidebar: () => <div>MEMZ!</div>,
+    sidebar: () => <></>,
     main: () => <Memory />,
   },
 ];
@@ -80,7 +80,7 @@ const MainWrapper = styled.div`
 const SideMenuWrapper = styled.div`
   padding: 20px;
   width: 20%;
-  background: pink;
+  background: #ffce47;
   overflow: visible;
 `;
 const ULWrapper = styled.ul`
@@ -113,7 +113,7 @@ const ULWrapper = styled.ul`
 const ComponentWrapper = styled.div`
   flex: 1;
   padding: 10px;
-  background-color: teal;
+  background-color: #79a9cd;
   overflow: auto;
   ::-webkit-scrollbar {
     display: none;

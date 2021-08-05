@@ -50,7 +50,8 @@ const ULWrapper = styled.ul`
   justify-content: space-evenly;
   align-items: center;
   /* border: solid green 4px; */
-  background-color: #0093e9;
+  background-color: #f5f5e0;
+  /* background-color: #0093e9; */
   height: auto;
   width: inherit;
   padding: 10px;
