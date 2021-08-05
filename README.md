@@ -1,5 +1,5 @@
 # GAMBIT♠️♦️♣️❤️ MintBean Hackathon
-
+![](gambit.gif)
 ## Description
 
 The purpose of this application is to create a card Game for the MintBean Hackathon. This is a front end application that re-creates the War game.The app was built with react hooks and styled components.
