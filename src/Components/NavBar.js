@@ -8,8 +8,10 @@ const NavBar = ({ Home, HowToPlay, WarBoard }) => {
       <ULWrapper>
         <AppTitle>
           <NavLink to="/" exact>
+            {/* <li> */}
             GAMBIT
             <GiSpadeSkull size={"1rem"} />
+            {/* </li> */}
           </NavLink>
         </AppTitle>
 
@@ -22,9 +24,9 @@ const NavBar = ({ Home, HowToPlay, WarBoard }) => {
         <NavLink to="/lets-play-war!" activeClassName="current" exact>
           <li>Let's Play</li>
         </NavLink>
-        <NavLink to="/login" activeClassName="current" exact>
+        {/* <NavLink to="/login" activeClassName="current" exact>
           <li>Login</li>
-        </NavLink>
+        </NavLink> */}
       </ULWrapper>
     </Wrapper>
   );
@@ -32,28 +34,38 @@ const NavBar = ({ Home, HowToPlay, WarBoard }) => {
 
 export default NavBar;
 const Wrapper = styled.div`
-  flex: 1;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
+  /* flex: 1 1 50px; */
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  height: auto;
   /* background-color: lavender; */
+  /* border: solid 5px black; */
 `;
 const ULWrapper = styled.ul`
+  /* height: 50px; */
   font-family: "Montserrat", sans-serif;
   display: flex;
-
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: solid green 4px; */
   background-color: #0093e9;
-  height: inherit;
+  height: auto;
+  width: inherit;
+  padding: 10px;
 
+  /* border: solid black 5px; */
   a {
     text-decoration: none;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
     color: black;
     &:hover {
       color: deeppink;
     }
   }
+
   li {
     color: black;
     margin: 0 0.08rem;
@@ -74,7 +86,7 @@ const ULWrapper = styled.ul`
 const AppTitle = styled.h1`
   color: black;
   font-family: "Staatliches", cursive;
-  padding: 0 200px 0 0;
-  align-self: center;
+  /* padding: 0 00px 0 0; */
+  align-self: flex-start;
   height: auto;
 `;
