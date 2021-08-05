@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import HowToPlay from "./Components/HowToPlay";
+// import War from "./Components/GameInstructions/War";
+// import Memory from "./Components/GameInstructions/Memory";
+import Home from "./Components/Home";
+import NavBar from "./Components/NavBar";
+import NotFound from "./Components/NotFound";
+import GlobalStyles from "./GlobalStyles";
+import WarBoard from "./Components/WAR/WarBoard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <NavBar Home={Home} HowToPlay={HowToPlay} warboard={WarBoard} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/how-to-play" component={HowToPlay} />
+          <Route path="/lets-play-war!" component={WarBoard} />
+
+          <Route path="*" component={NotFound} />
+        </Switch>
+      </Router>
+      <GlobalStyles />
     </div>
   );
 }
