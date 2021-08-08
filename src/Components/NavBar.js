@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   width: 100%;
   /* justify-content: space-between; */
   /* align-items: center; */
-  height: auto;
+  height: 8%;
   /* background-color: lavender; */
   /* border: solid 5px black; */
 `;

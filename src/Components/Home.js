@@ -1,193 +1,182 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { GiCardJoker } from "react-icons/gi";
-import { GiSpadeSkull } from "react-icons/gi";
+import { GiSpadeSkull, GiCardJoker } from "react-icons/gi";
 import {
   CgCardSpades,
   CgCardDiamonds,
   CgCardHearts,
   CgCardClubs,
 } from "react-icons/cg";
+let iconSize = 60;
 const Home = () => {
   return (
     <HomeWrapper>
       <landingContainer>
         <IconWrapper>
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <CgCardHearts size={75} /> <GiCardJoker size={75} />
-          <CgCardClubs size={75} />
-          <CgCardSpades size={75} />
-          <CgCardDiamonds size={75} />
-          <CgCardHearts size={75} />
-          <div>
-            <Gambit>GAMBIT</Gambit>
-            <GiSpadeSkull />
-          </div>
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <LogoContainer>
+            {/* <GiCardJoker size={iconSize} /> */}
+            <Gambit>
+              GAMBIT
+              <GiSpadeSkull ClassName={"spadeskull"} size={80} />
+            </Gambit>
+          </LogoContainer>
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} />
+          <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
+          <CgCardClubs size={iconSize} />
+          <CgCardSpades size={iconSize} />
+          <CgCardDiamonds size={iconSize} />
+          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
         </IconWrapper>
       </landingContainer>
     </HomeWrapper>
@@ -196,10 +185,14 @@ const Home = () => {
 
 export default Home;
 const HomeWrapper = styled.div`
+  flex: 1;
   display: flex;
-  background-color: lightslategray;
-  height: 100%;
+  /* padding: 0 10% 0 10%; */
+  /* background-color: lightslategray; */
+  height: 92%;
+  width: 100%;
   position: relative;
+  /* opacity: 0.5; */
 `;
 const landingContainer = styled.div`
   display: flex;
@@ -209,14 +202,18 @@ const landingContainer = styled.div`
 `;
 const IconWrapper = styled.div`
   display: flex;
+  flex: 1;
+  position: relative;
   height: auto;
-  opacity: 0.5;
+  background-color: lightslategray;
+  padding: 2%;
   /* flex-direction: column; */
   flex-wrap: wrap;
-
+  justify-content: center;
   svg {
     height: auto;
-    opacity: 0.5;
+    width: 4rem;
+    /* opacity: 0.5; */
   }
   div {
     display: flex;
@@ -225,12 +222,23 @@ const IconWrapper = styled.div`
 `;
 const Gambit = styled.h1`
   color: black;
+  position: relative;
   font-family: "Staatliches";
   /* align-self: center; */
   height: auto;
-  position: absolute;
+  /* position: absolute; */
   font-size: 6rem;
-  left: 50%;
-  top: 50%;
-  z-index: 3;
+  /* text-shadow: 0px 4px 3px whitesmoke; */
+  z-index: 1;
+  /* width: inherit; */
+`;
+const LogoContainer = styled.div`
+  display: flex;
+  left: 40%;
+  height: auto;
+  top: 40%;
+  svg {
+    color: black;
+    padding: 0;
+  }
 `;

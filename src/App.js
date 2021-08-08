@@ -8,9 +8,10 @@ import NavBar from "./Components/NavBar";
 import NotFound from "./Components/NotFound";
 import GlobalStyles from "./GlobalStyles";
 import WarBoard from "./Components/WAR/WarBoard";
+import styled from "styled-components/macro";
 function App() {
   return (
-    <div>
+    <MainWrapper>
       <Router>
         <NavBar Home={Home} HowToPlay={HowToPlay} warboard={WarBoard} />
         <Switch>
@@ -22,8 +23,8 @@ function App() {
         </Switch>
       </Router>
       <GlobalStyles />
-    </div>
+    </MainWrapper>
   );
 }
-
+const MainWrapper = styled.div``;
 export default App;
