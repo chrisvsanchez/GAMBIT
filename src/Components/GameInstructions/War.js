@@ -1,41 +1,48 @@
 import React from "react";
 import styled from "styled-components/macro";
 import {
-  GiCard2Diamonds,
-  GiCard3Diamonds,
-  GiCard4Diamonds,
-  GiCard5Diamonds,
-  GiCard6Diamonds,
-  GiCard7Diamonds,
-  GiCard8Diamonds,
-  GiCard9Diamonds,
-  GiCardAceDiamonds,
-  GiCardJackDiamonds,
-  GiCard10Diamonds,
-  GiCardQueenDiamonds,
+  GiCard2Spades,
+  GiCard3Spades,
+  GiCard4Spades,
+  GiCard5Spades,
+  GiCard6Spades,
+  GiCard7Spades,
+  GiCard8Spades,
+  GiCard9Spades,
+  GiCardAceSpades,
+  GiCardJackSpades,
+  GiCard10Spades,
+  GiCardQueenSpades,
 } from "react-icons/gi";
+import { ImArrowRight, ImArrowLeft } from "react-icons/im";
 const War = () => {
   return (
     <InstructionWrapper>
       <h1>How to Play War</h1>
       <p>
-        War is 2 player card game that is left to complete chance to determine
+        War is a 2 player card game that is left to complete chance to determine
         who wins! All you need is a 52 deck of traditional playing cards and a
         whole lot of luck!
       </p>
-      <div>
-        <GiCard2Diamonds />
-        <GiCard3Diamonds />
-        <GiCard4Diamonds />
-        <GiCard5Diamonds />
-        <GiCard6Diamonds />
-        <GiCard7Diamonds />
-        <GiCard8Diamonds />
-        <GiCard9Diamonds />
-        <GiCard10Diamonds />
-        <GiCardAceDiamonds />
-        <GiCardJackDiamonds />
-        <GiCardQueenDiamonds />
+      <div style={{ backgroundColor: "black" }}>
+        <h3>Lowest</h3>
+        <ImArrowRight className={"arrows"} />
+
+        <GiCard2Spades />
+
+        <GiCard3Spades />
+        <GiCard4Spades />
+        <GiCard5Spades />
+        <GiCard6Spades />
+        <GiCard7Spades />
+        <GiCard8Spades />
+        <GiCard9Spades />
+        <GiCard10Spades />
+        <GiCardAceSpades />
+        <GiCardJackSpades />
+        <GiCardQueenSpades />
+        <ImArrowLeft className={"arrows"} />
+        <h3>Highest</h3>
       </div>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -50,6 +57,7 @@ const InstructionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 98%;
+  padding: 25px;
   h1 {
     height: auto;
   }
@@ -68,6 +76,19 @@ const InstructionWrapper = styled.div`
     svg {
       height: auto;
       width: 4rem;
+      color: white;
+      /* background-color: red; */
+    }
+    .arrows {
+      width: 1.5rem;
+      color: black;
+      background-color: transparent;
+      color: white;
+      padding: 0 5px;
+    }
+    h3 {
+      height: auto;
+      color: white;
     }
   }
 `;
