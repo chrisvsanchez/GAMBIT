@@ -20,16 +20,14 @@ const War = () => {
     <InstructionWrapper>
       <h1>How to Play War</h1>
       <p>
-        War is a 2 player card game that is left to complete chance to determine
-        who wins! All you need is a 52 deck of traditional playing cards and a
-        whole lot of luck!
+        War is a 2 player card game uses chance to determine who wins! All you
+        need is a 52 deck of traditional playing cards and a whole lot of luck
+        to get started!
       </p>
       <div style={{ backgroundColor: "black" }}>
         <h3>Lowest</h3>
         <ImArrowRight className={"arrows"} />
-
         <GiCard2Spades />
-
         <GiCard3Spades />
         <GiCard4Spades />
         <GiCard5Spades />
