@@ -7,7 +7,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import War from "./GameInstructions/War";
-import Memory from "./GameInstructions/Memory";
+// import Memory from "./GameInstructions/Memory";
 const routes = [
   {
     path: "/how-to-play",
@@ -20,11 +20,11 @@ const routes = [
     sidebar: () => <></>,
     main: () => <War />,
   },
-  {
-    path: "/memory",
-    sidebar: () => <></>,
-    main: () => <Memory />,
-  },
+  // {
+  //   path: "/memory",
+  //   sidebar: () => <></>,
+  //   main: () => <Memory />,
+  // },
 ];
 const HowToPlay = () => {
   return (
@@ -32,13 +32,13 @@ const HowToPlay = () => {
       <MainWrapper>
         <SideMenuWrapper>
           <ULWrapper>
-            <h3>Games</h3>
+            <h3>Game Instructions</h3>
             <NavLink activeClassName="current" to="/war" exact>
               <li>War</li>
             </NavLink>
-            <NavLink activeClassName="current" to="/memory" exact>
+            {/* <NavLink activeClassName="current" to="/memory" exact>
               <li>Memory</li>
-            </NavLink>
+            </NavLink> */}
           </ULWrapper>
 
           <Switch>
@@ -79,7 +79,7 @@ const MainWrapper = styled.div`
 `;
 const SideMenuWrapper = styled.div`
   padding: 20px;
-  width: 20%;
+  width: 15%;
   background: #ffce47;
   overflow: visible;
 `;
@@ -108,6 +108,7 @@ const ULWrapper = styled.ul`
     text-align: center;
     font-family: "Staatliches", cursive;
     letter-spacing: 0.1rem;
+    padding: 10px;
   }
 `;
 const ComponentWrapper = styled.div`

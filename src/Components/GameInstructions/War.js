@@ -32,7 +32,7 @@ const War = () => {
         Below you'll see cards that are ordered from lowest value to highest.
         Regardless of suit(♦️,♣️,♠️,♥️)
       </p>
-      <div style={{ backgroundColor: "black" }}>
+      <div className={"card-wrapper"} style={{ backgroundColor: "black" }}>
         <h3>Lowest</h3>
         <ImArrowRight className={"arrows"} />
         <GiCard2Spades />
@@ -91,12 +91,7 @@ const War = () => {
           </ul>
         </li>
       </OrderedListWrapper>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-      </p>
+      <p>Hope you have fun playing WAR!</p>
     </InstructionWrapper>
   );
 };
@@ -136,10 +131,15 @@ const InstructionWrapper = styled.div`
       height: auto;
       color: white;
     }
+    .card-wrapper {
+      background-color: blanchedalmond;
+    }
   }
 `;
 const OrderedListWrapper = styled.ol`
   height: auto;
+  margin-left: 0;
+  padding-left: 5%;
   li {
     height: auto;
     font-size: 1.2rem;
