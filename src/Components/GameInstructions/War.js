@@ -117,7 +117,6 @@ const InstructionWrapper = styled.div`
     display: flex;
     padding: 10px;
     height: auto;
-    border: solid 3px chartreuse;
     justify-content: space-evenly;
     align-items: center;
     svg {
@@ -152,7 +151,6 @@ const ImageContainer = styled.div`
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-
   gap: 10px;
   padding: 10px;
   img {
