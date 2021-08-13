@@ -86,7 +86,8 @@ const ULWrapper = styled.ul`
 `;
 const AppTitle = styled.h1`
   color: black;
-  font-family: "Staatliches", cursive;
+  font-family: "Staatliches", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
   /* padding: 0 00px 0 0; */
   align-self: flex-start;
   height: auto;

@@ -1,14 +1,17 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import Card from "./Card";
 import styled from "styled-components/macro";
 import BackCard from "./BackCard";
+import WarModal from "./WarModal";
 const WarBoard = () => {
   const [oppDeck, setOppDeck] = useState([]);
   const [currPlayerDeck, setCurrPlayerDeck] = useState([]);
   const [shuffDeck, setShuffDeck] = useState([]);
   const [currentlyDrawn, setCurrentlyDrawn] = useState([]);
   const [oppDrawn, setOppDrawn] = useState([]);
-
+  const [toggleModal, setToggleModal] = useState(false);
+  const toggleModalRef = useRef(toggleModal);
+  toggleModalRef.current = toggleModal;
   function card(value, name, suit, back) {
     this.value = value;
     this.name = name;
@@ -59,11 +62,12 @@ const WarBoard = () => {
     setOppDeck(shuffled.slice(0, mid));
     setCurrPlayerDeck(shuffled.slice(mid, shuffled.length));
   };
-  const resetCardBoolean = () => {
-    oppDrawn.forEach((card) => (card.back = false));
-    currentlyDrawn.forEach((card) => (card.back = false));
-  };
+  // const resetCardBoolean = () => {
+  //   oppDrawn.forEach((card) => (card.back = false));
+  //   currentlyDrawn.forEach((card) => (card.back = false));
+  // };
   const drawCard = () => {
+    // setToggleModal(true);
     let chosenCard = currPlayerDeck.shift();
     let oppCard = oppDeck.shift();
     setCurrentlyDrawn([chosenCard]);
@@ -148,8 +152,10 @@ const WarBoard = () => {
       }
     }
   }, [oppDrawn, currentlyDrawn]);
+
   return (
     <GameBoardWrapper>
+      {toggleModal ? <WarModal /> : null}
       <OpponentDeck>
         <BackCard numOfCards={oppDeck.length} />
       </OpponentDeck>
@@ -177,12 +183,15 @@ const WarBoard = () => {
 const GameBoardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 92%;
+  /* position: relative; */
 `;
 const DrawnCards = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  /* border: solid pink 3px; */
 `;
 const OpponentSide = styled.div`
   flex: 1;
@@ -195,10 +204,14 @@ const OpponentSide = styled.div`
 const CurrentPlayerSide = styled.div`
   flex: 1;
   display: flex;
+
   background-color: #ffce47;
   align-items: center;
   justify-content: flex-start;
   padding-left: 5px;
+
+  width: 100%;
+  height: auto;
 `;
 const OpponentDeck = styled.div`
   flex: 1;

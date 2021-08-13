@@ -172,11 +172,6 @@ const Home = () => {
           <CgCardClubs size={iconSize} />
           <CgCardSpades size={iconSize} />
           <CgCardDiamonds size={iconSize} />
-          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
-          <CgCardClubs size={iconSize} />
-          <CgCardSpades size={iconSize} />
-          <CgCardDiamonds size={iconSize} />
-          <CgCardHearts size={iconSize} /> <GiCardJoker size={iconSize} />
         </IconWrapper>
       </landingContainer>
     </HomeWrapper>
@@ -191,29 +186,30 @@ const HomeWrapper = styled.div`
   /* background-color: lightslategray; */
   height: 92%;
   width: 100%;
+  /* padding: 20px; */
   position: relative;
   /* opacity: 0.5; */
 `;
 const landingContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  background-color: peachpuff;
 `;
 const IconWrapper = styled.div`
   display: flex;
+  position: fixed;
   flex: 1;
-  position: relative;
-  height: auto;
+  padding: 20px;
+  height: inherit;
   background-color: lightslategray;
-  padding: 2%;
+  /* padding: %; */
   /* flex-direction: column; */
   flex-wrap: wrap;
+  overflow: hidden;
   justify-content: center;
+
   svg {
     height: auto;
-    width: 4rem;
-    /* opacity: 0.5; */
+    width: 3rem;
   }
   div {
     display: flex;
@@ -237,6 +233,7 @@ const LogoContainer = styled.div`
   left: 40%;
   height: auto;
   top: 40%;
+
   svg {
     color: black;
     padding: 0;
